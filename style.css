@@ -1,6 +1,7 @@
 nav .Navarea{
     display:grid;
     grid-template-columns:1fr 3fr 1fr 1fr 1fr;
+    margin:10px;
 }
 nav .morganzone{
     display:grid;
@@ -12,13 +13,16 @@ nav .morganzone h5{
 nav .Navarea .sz{
 background-color:white;
 margin: 3px;
-border-radius: 25%;
+border-radius: 10px;
+}
+.morganadress{
+    font-size:10px;
 }
 nav .morganzone .text{
     color:white;
     font-size:15px;
     background-color: blue;
-    border-radius: 50%;
+    border-radius: 60px;
     justify-items: center;
     height: 35px;
     margin: 2px;
@@ -45,7 +49,7 @@ display:grid;
 border: solid red;
 }
 .imgsearch{
-    width: 20px;
+    width: 30px;
 }
 main {
     background: #94a3b8;
