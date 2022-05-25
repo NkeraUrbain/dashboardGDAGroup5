@@ -11,12 +11,12 @@ nav .morganzone h5{
     font-size:10px;
 }
 nav .Navarea .sz{
-background-color:white;
+background-color:gray;
 margin: 3px;
 border-radius: 10px;
 }
 .morganadress{
-    font-size:10px;
+    font-size:15px;
 }
 nav .morganzone .text{
     color:white;
@@ -41,7 +41,7 @@ nav .morganzone .text{
 
 nav {
     display:block;
-    background: #b6ae99;
+    background: white;
     grid-area: nav;
 }
 nav .navarea{
@@ -51,9 +51,13 @@ border: solid red;
 .imgsearch{
     width: 30px;
 }
+.imgsearch2{
+    width: 30px;
+    border-radius: 50%;
+}
 main {
     background: #94a3b8;
-    grid-area: sidebar;
+    grid-area: main;
 }
 
 #sidebar {
@@ -64,21 +68,6 @@ main {
 #content1 {
     background: #4ade80;
     grid-area: content1;
-}
-
-#content2 {
-    background: #22d3ee;
-    grid-area: content2;
-}
-
-#content3 {
-    background: #0c4a6e;
-    grid-area: content3;
-}
-
-footer {
-    background: #831843;
-    grid-area: footer;
 }
 
 @media only screen and (max-width: 550px) {
