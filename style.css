@@ -14,21 +14,23 @@ nav .Navarea .sz{
 background-color:gray;
 margin: 3px;
 border-radius: 10px;
+height: 17px;
 }
 .morganadress{
     font-size:15px;
+    font-weight: bold;
 }
 nav .morganzone .text{
     color:white;
-    font-size:15px;
+    font-size:14px;
     background-color: blue;
     border-radius: 60px;
     justify-items: center;
-    height: 35px;
+    height: 25px;
     margin: 2px;
     text-align: center;
+    width: 65px;
 }
-
 
 
 .container {
@@ -53,6 +55,10 @@ border: solid red;
 }
 .imgsearch2{
     width: 30px;
+    border-radius: 50%;
+}
+.imgsearch3{
+    width: 40px;
     border-radius: 50%;
 }
 main {
