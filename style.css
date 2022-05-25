@@ -1,3 +1,29 @@
+nav .Navarea{
+    display:grid;
+    grid-template-columns:1fr 3fr 1fr 1fr 1fr;
+}
+nav .morganzone{
+    display:grid;
+    grid-template-columns:1fr 3fr 1fr 1fr 1fr;
+}
+nav .morganzone h5{
+    font-size:10px;
+
+
+}
+nav .morganzone .text{
+    color:white;
+    font-size:15px;
+    background-color: blue;
+    border-radius: 50%;
+    justify-items: center;
+    height: 35px;
+    margin: 2px;
+    text-align: center;
+}
+
+
+
 .container {
     display: grid;
     height: 100vh;
@@ -7,10 +33,17 @@
 }
 
 nav {
-    background: #fbbf24;
+    display:block;
+    background: #b6ae99;
     grid-area: nav;
 }
-
+nav .navarea{
+display:grid;
+border: solid red;
+}
+.imgsearch{
+    width: 20px;
+}
 main {
     background: #94a3b8;
     grid-area: sidebar;
