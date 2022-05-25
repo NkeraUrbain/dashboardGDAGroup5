@@ -21,10 +21,27 @@ nav {
 }
 
 main {
-    background: #94a3b8;
+    background: #e5e7eb;
     grid-area: main;
+    display: grid;
+}
+
+main .cont-carte {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .cont-carte .carte {
+    background: white;
     border-radius: var(--main-radius);
-    padding: var(--main-padding);
+    padding: 10px;
+    margin: 10px;
+    display: block;
+}
+
+main .cont-carte .carte .carte-icons {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #sidebar {
