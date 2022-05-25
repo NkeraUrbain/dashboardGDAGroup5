@@ -8,8 +8,11 @@ nav .morganzone{
 }
 nav .morganzone h5{
     font-size:10px;
-
-
+}
+nav .Navarea .sz{
+background-color:white;
+margin: 3px;
+border-radius: 25%;
 }
 nav .morganzone .text{
     color:white;
