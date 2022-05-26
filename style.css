@@ -95,10 +95,18 @@ main {
 }
 .deuxiemepartie{
     display:grid;
-    grid-template-columns:2,1fr;
-    margin:10px;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    margin:5px;
     justify-content: space-around;
     color:gray;
     background-color:beige;
     border-radius: 38px;
+}
+.deuxiemepartie img{
+width:30px;
+}
+.deuxiemepartie .dot{
+grid-template-columns: auto;
+    grid-template-rows: 2;
 }
