@@ -93,9 +93,9 @@ main {
     background-color: beige;
     border-radius: 38px;
 }
-#content1 .deuxiemepartie{
-    display:block;
-    grid-template-rows:1fr 1fr 1fr;
+.deuxiemepartie{
+    display:grid;
+    grid-template-columns:2,1fr;
     margin:10px;
     justify-content: space-around;
     color:gray;
