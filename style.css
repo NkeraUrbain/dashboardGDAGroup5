@@ -5,12 +5,12 @@
 
 .container {
     display: grid;
-    height: 100vh;
+    /*     height: 100vh; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
     grid-template-areas: "sidebar nav nav nav" "sidebar main main content1" "sidebar main main content1" "sidebar main main content1 ";
     /*   grid-gap: 3px; */
-    font-family: Roboto sans-serif;
+    font-family: Roboto;
 }
 
 nav {
@@ -21,10 +21,40 @@ nav {
 }
 
 main {
-    background: #94a3b8;
+    background: #e5e7eb;
     grid-area: main;
+    display: grid;
+}
+
+main h4 {
+    padding-left: 20px;
+    font-family: Roboto sans-serif;
+}
+
+main .cont-carte {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .cont-carte p {
+    color: #9ca3af;
+}
+
+main .cont-carte h3 {
+    font-size: 16px;
+}
+
+main .cont-carte .carte {
+    background: white;
     border-radius: var(--main-radius);
-    padding: var(--main-padding);
+    padding: 10px;
+    margin: 10px;
+    display: block;
+}
+
+main .cont-carte .carte .carte-icons {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #sidebar {
