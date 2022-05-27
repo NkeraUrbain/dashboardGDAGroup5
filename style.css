@@ -107,7 +107,7 @@ justify-content: space-around;
 width:100%;
 background-color:beige;
 border-radius: 38px;
-grid-template-rows: 2;
+grid-template-columns: 2,1fr 1fr;
 margin:5px;
 }
 .agents img{
