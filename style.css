@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --main-radius: 5px;
     --main-padding: 5px;
@@ -79,13 +80,89 @@ main .cont-carte .carte .carte-icons {
     font-weight: bold;
     font-size: 50px;
     padding-bottom: 30px;
+=======
+nav .Navarea{
+    display:grid;
+    grid-template-columns:1fr 3fr 1fr 1fr 1fr;
+    margin:10px;
+}
+nav .morganzone{
+    display:grid;
+    grid-template-columns:1fr 3fr 1fr 1fr 1fr;
+}
+nav .morganzone h5{
+    font-size:10px;
+}
+nav .Navarea .sz{
+background-color:gray;
+margin: 3px;
+border-radius: 10px;
+height: 17px;
+}
+.morganadress{
+    font-size:15px;
+    font-weight: bold;
+}
+nav .morganzone .text{
+    color:white;
+    font-size:14px;
+    background-color: blue;
+    border-radius: 60px;
+    justify-items: center;
+    height: 20px;
+    margin: 2px;
+    text-align: center;
+    width: 65px;
+}
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: "sidebar nav nav nav" "sidebar main main content1" "sidebar main main content1" "sidebar main main content1 ";
+}
+
+nav {
+    display:block;
+    background: white;
+    grid-area: nav;
+}
+nav .navarea{
+display:grid;
+border: solid red;
+}
+.imgsearch{
+    width: 30px;
+}
+.imgsearch2{
+    width: 30px;
+    border-radius: 50%;
+}
+.imgsearch3{
+    width: 40px;
+    border-radius: 50%;
+}
+main {
+    background: #94a3b8;
+    grid-area: main;
+}
+
+#sidebar {
+    background: #3a7e82;
+    grid-area: sidebar;
+>>>>>>> a8c5528ea49cf9c52b6213c8fbcaa6f0feb31bc5
 }
 
 #content1 {
     background: #4ade80;
     grid-area: content1;
+<<<<<<< HEAD
     border-radius: var(--main-radius);
     padding: var(--main-padding);
+=======
+>>>>>>> a8c5528ea49cf9c52b6213c8fbcaa6f0feb31bc5
 }
 
 @media only screen and (max-width: 550px) {
@@ -93,6 +170,7 @@ main .cont-carte .carte .carte-icons {
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr;
         grid-template-areas: "nav" "sidebar" "main" "content1";
+<<<<<<< HEAD
         grid-gap: 0.2rem;
     }
 }
@@ -182,3 +260,38 @@ main .cont-carte .carte .carte-icons {
         grid-gap: 0.2rem;
     }
 }
+=======
+    }
+}
+
+#content1{
+    display:block;
+    grid-template-rows:1fr 1fr 1fr;
+    
+}
+.corps{
+    margin:10px;
+    justify-content: space-around;
+    color:gray;
+    background-color: beige;
+    border-radius: 38px;
+}
+.deuxiemepartie{
+    display:grid;
+    grid-template-columns: auto; 
+    color:gray;
+    
+}
+.deuxiemepartie .agents{
+justify-content: space-around;
+width:100%;
+background-color:beige;
+border-radius: 38px;
+grid-template-columns: 2,1fr 1fr;
+margin:5px;
+}
+.agents img{
+    width: 50px;
+}
+
+>>>>>>> a8c5528ea49cf9c52b6213c8fbcaa6f0feb31bc5
