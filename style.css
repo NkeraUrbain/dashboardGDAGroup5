@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 :root {
     --main-radius: 5px;
     --main-padding: 5px;
@@ -80,7 +80,7 @@ main .cont-carte .carte .carte-icons {
     font-weight: bold;
     font-size: 50px;
     padding-bottom: 30px;
-=======
+}
 nav .Navarea{
     display:grid;
     grid-template-columns:1fr 3fr 1fr 1fr 1fr;
@@ -152,17 +152,14 @@ main {
 #sidebar {
     background: #3a7e82;
     grid-area: sidebar;
->>>>>>> a8c5528ea49cf9c52b6213c8fbcaa6f0feb31bc5
+
 }
 
 #content1 {
     background: #4ade80;
     grid-area: content1;
-<<<<<<< HEAD
     border-radius: var(--main-radius);
     padding: var(--main-padding);
-=======
->>>>>>> a8c5528ea49cf9c52b6213c8fbcaa6f0feb31bc5
 }
 
 @media only screen and (max-width: 550px) {
@@ -170,7 +167,6 @@ main {
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr;
         grid-template-areas: "nav" "sidebar" "main" "content1";
-<<<<<<< HEAD
         grid-gap: 0.2rem;
     }
 }
@@ -260,38 +256,3 @@ main .cont-carte .carte .carte-icons {
         grid-gap: 0.2rem;
     }
 }
-=======
-    }
-}
-
-#content1{
-    display:block;
-    grid-template-rows:1fr 1fr 1fr;
-    
-}
-.corps{
-    margin:10px;
-    justify-content: space-around;
-    color:gray;
-    background-color: beige;
-    border-radius: 38px;
-}
-.deuxiemepartie{
-    display:grid;
-    grid-template-columns: auto; 
-    color:gray;
-    
-}
-.deuxiemepartie .agents{
-justify-content: space-around;
-width:100%;
-background-color:beige;
-border-radius: 38px;
-grid-template-columns: 2,1fr 1fr;
-margin:5px;
-}
-.agents img{
-    width: 50px;
-}
-
->>>>>>> a8c5528ea49cf9c52b6213c8fbcaa6f0feb31bc5
