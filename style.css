@@ -97,20 +97,26 @@ main {
     border-radius: 38px;
 }
 .deuxiemepartie{
-    display:grid;
-    grid-template-columns: auto; 
-    color:gray;
-    
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .deuxiemepartie .agents{
 justify-content: space-around;
-width:100%;
 background-color:beige;
 border-radius: 38px;
-grid-template-columns: 2,1fr 1fr;
 margin:5px;
 }
+.deuxiemepartie .agent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    width:20em;
+    background-color:beige;
+    border-radius: 38px;
+    margin:5px;
+    }
 .agents img{
-    width: 50px;
+    width: 100px;
 }
 
