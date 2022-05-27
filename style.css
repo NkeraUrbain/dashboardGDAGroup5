@@ -87,6 +87,9 @@ main {
 #content1{
     display:block;
     grid-template-rows:1fr 1fr 1fr;
+    
+}
+.corps{
     margin:10px;
     justify-content: space-around;
     color:gray;
@@ -95,18 +98,19 @@ main {
 }
 .deuxiemepartie{
     display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: 2;
-    margin:5px;
-    justify-content: space-around;
+    grid-template-columns: auto; 
     color:gray;
-    background-color:beige;
-    border-radius: 38px;
+    
 }
-.deuxiemepartie img{
-width:30px;
+.deuxiemepartie .agents{
+justify-content: space-around;
+width:100%;
+background-color:beige;
+border-radius: 38px;
+grid-template-rows: 2;
+margin:5px;
 }
-.deuxiemepartie .dot{
-grid-template-columns: auto;
-    grid-template-rows: 2;
+.agents img{
+    width: 50px;
 }
+
