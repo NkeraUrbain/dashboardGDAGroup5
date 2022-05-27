@@ -1,4 +1,3 @@
-
 :root {
     --main-radius: 5px;
     --main-padding: 5px;
@@ -6,19 +5,16 @@
 
 .container {
     display: grid;
-    /*     height: 100vh; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "sidebar nav nav nav" "sidebar main main content1" "sidebar main main content1" "sidebar main main content1 ";
-    /*   grid-gap: 3px; */
     font-family: Roboto;
 }
 
 nav {
-    background: #fbbf24;
+    background: rgb(255, 255, 255);
     grid-area: nav;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
+    display: block;
 }
 
 main {
@@ -81,31 +77,37 @@ main .cont-carte .carte .carte-icons {
     font-size: 50px;
     padding-bottom: 30px;
 }
-nav .Navarea{
-    display:grid;
-    grid-template-columns:1fr 3fr 1fr 1fr 1fr;
-    margin:10px;
+
+nav .Navarea {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    margin: 10px;
 }
-nav .morganzone{
-    display:grid;
-    grid-template-columns:1fr 3fr 1fr 1fr 1fr;
+
+nav .morganzone {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
 }
-nav .morganzone h5{
-    font-size:10px;
+
+nav .morganzone h5 {
+    font-size: 10px;
 }
-nav .Navarea .sz{
-background-color:gray;
-margin: 3px;
-border-radius: 10px;
-height: 17px;
+
+nav .Navarea .sz {
+    background-color: gray;
+    margin: 3px;
+    border-radius: 10px;
+    height: 17px;
 }
-.morganadress{
-    font-size:15px;
+
+.morganadress {
+    font-size: 15px;
     font-weight: bold;
 }
-nav .morganzone .text{
-    color:white;
-    font-size:14px;
+
+nav .morganzone .text {
+    color: white;
+    font-size: 14px;
     background-color: blue;
     border-radius: 60px;
     justify-items: center;
@@ -115,51 +117,28 @@ nav .morganzone .text{
     width: 65px;
 }
 
-
-.container {
+nav .navarea {
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-    grid-template-areas: "sidebar nav nav nav" "sidebar main main content1" "sidebar main main content1" "sidebar main main content1 ";
+    border: solid red;
 }
 
-nav {
-    display:block;
-    background: white;
-    grid-area: nav;
-}
-nav .navarea{
-display:grid;
-border: solid red;
-}
-.imgsearch{
+.imgsearch {
     width: 30px;
 }
-.imgsearch2{
+
+.imgsearch2 {
     width: 30px;
     border-radius: 50%;
 }
-.imgsearch3{
+
+.imgsearch3 {
     width: 40px;
     border-radius: 50%;
-}
-main {
-    background: #94a3b8;
-    grid-area: main;
-}
-
-#sidebar {
-    background: #3a7e82;
-    grid-area: sidebar;
-
 }
 
 #content1 {
     background: #4ade80;
     grid-area: content1;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
 }
 
 @media only screen and (max-width: 550px) {
@@ -169,29 +148,6 @@ main {
         grid-template-areas: "nav" "sidebar" "main" "content1";
         grid-gap: 0.2rem;
     }
-}
-
-
-:root {
-    --main-radius: 5px;
-    --main-padding: 5px;
-}
-
-.container {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-    grid-template-areas: "sidebar nav nav nav" "sidebar main main content1" "sidebar main main content1" "sidebar main main content1 ";
-    /*   grid-gap: 3px; */
-    font-family: Roboto sans-serif;
-}
-
-nav {
-    background: #fbbf24;
-    grid-area: nav;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
 }
 
 main {
@@ -205,48 +161,52 @@ main .cont-carte {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#content1{
-    display:block;
-    grid-template-rows:1fr 1fr;
-    
+#content1 {
+    display: block;
+    grid-template-rows: 1fr 1fr;
 }
-.corps{
-   padding: 25px;
+
+.corps {
+    padding: 25px;
     justify-content: space-around;
-    color:gray;
+    color: gray;
     background-color: beige;
     border-radius: 38px;
 }
-.deuxiemepartie{
-    display:grid;
+
+.deuxiemepartie {
+    display: grid;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 20px;
 }
-.deuxiemepartie .agents{
-justify-content: space-around;
-background-color:beige;
-border-radius: 38px;
-margin:5px;
-padding: 25px;
+
+.deuxiemepartie .agents {
+    justify-content: space-around;
+    background-color: beige;
+    border-radius: 38px;
+    margin: 5px;
+    padding: 25px;
 }
-.deuxiemepartie .agent{
+
+.deuxiemepartie .agent {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
-    width:20em;
-    background-color:beige;
+    width: 20em;
+    background-color: beige;
     border-radius: 38px;
-    margin:5px;
-    }
-.agents img{
+    margin: 5px;
+}
+
+.agents img {
     width: 100px;
     border-radius: 50%;
 }
-#content1 .premierepartie h3{
-    font-size: bold;
-    color:black;
 
+#content1 .premierepartie h3 {
+    font-size: bold;
+    color: black;
 }
 
 main .cont-carte .carte {
