@@ -1,263 +1,197 @@
-:root {
-    --main-radius: 5px;
-    --main-padding: 5px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "sidebar nav nav nav" "sidebar main main content1" "sidebar main main content1" "sidebar main main content1 ";
-    font-family: Roboto;
-}
-
-nav {
-    background: rgb(255, 255, 255);
-    grid-area: nav;
-    display: block;
-}
-
-main {
-    background: #e5e7eb;
-    grid-area: main;
-    display: grid;
-}
-
-main h4 {
-    padding-left: 20px;
-    font-family: Roboto sans-serif;
-}
-
-main .cont-carte {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-main .cont-carte p {
-    color: #9ca3af;
-}
-
-main .cont-carte h3 {
-    font-size: 16px;
-}
-
-main .cont-carte .carte {
-    background: white;
-    border-radius: var(--main-radius);
-    padding: 10px;
-    margin: 10px;
-    display: block;
-}
-
-main .cont-carte .carte .carte-icons {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-#sidebar {
-    background: #3b82f6;
-    grid-area: sidebar;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-}
-
-#sidebar li {
-    list-style: none;
-    color: white;
-    margin: 15px;
-}
-
-#sidebar .side-content2 {
-    padding-top: 30px;
-}
-
-#sidebar .side-content1 .titre {
-    color: white;
-    font-weight: bold;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-
-nav .Navarea {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
-    margin: 10px;
-}
-
-nav .morganzone {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
-}
-
-nav .morganzone h5 {
-    font-size: 10px;
-}
-
-nav .Navarea .sz {
-    background-color: gray;
-    margin: 3px;
-    border-radius: 10px;
-    height: 17px;
-}
-
-.morganadress {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-nav .morganzone .text {
-    color: white;
-    font-size: 14px;
-    background-color: blue;
-    border-radius: 60px;
-    justify-items: center;
-    height: 20px;
-    margin: 2px;
-    text-align: center;
-    width: 65px;
-}
-
-nav .navarea {
-    display: grid;
-    border: solid red;
-}
-
-.imgsearch {
-    width: 30px;
-}
-
-.imgsearch2 {
-    width: 30px;
-    border-radius: 50%;
-}
-
-.imgsearch3 {
-    width: 40px;
-    border-radius: 50%;
-}
-
-#content1 {
-    background: #4ade80;
-    grid-area: content1;
-}
-
-@media only screen and (max-width: 550px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.4fr 1fr;
-        grid-template-areas: "nav" "sidebar" "main" "content1";
-        grid-gap: 0.2rem;
-    }
-}
-
-main {
-    background: #e5e7eb;
-    grid-area: main;
-    display: grid;
-}
-
-main .cont-carte {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#content1 {
-    display: block;
-    grid-template-rows: 1fr 1fr;
-}
-
-.corps {
-    padding: 25px;
-    justify-content: space-around;
-    color: gray;
-    background-color: beige;
-    border-radius: 38px;
-}
-
-.deuxiemepartie {
-    display: grid;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 20px;
-}
-
-.deuxiemepartie .agents {
-    justify-content: space-around;
-    background-color: beige;
-    border-radius: 38px;
-    margin: 5px;
-    padding: 25px;
-}
-
-.deuxiemepartie .agent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-    width: 20em;
-    background-color: beige;
-    border-radius: 38px;
-    margin: 5px;
-}
-
-.agents img {
-    width: 100px;
-    border-radius: 50%;
-}
-
-#content1 .premierepartie h3 {
-    font-size: bold;
-    color: black;
-}
-
-main .cont-carte .carte {
-    background: white;
-    border-radius: var(--main-radius);
-    padding: 10px;
-    margin: 10px;
-    display: block;
-}
-
-main .cont-carte .carte .carte-icons {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-#sidebar {
-    background: #3b82f6;
-    grid-area: sidebar;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-}
-
-#sidebar li {
-    list-style: none;
-    color: white;
-    margin: 15px;
-}
-
-#sidebar .side-content2 {
-    padding-top: 30px;
-}
-
-#sidebar .side-content1 .titre {
-    color: white;
-    font-weight: bold;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-
-#content1 {
-    background: #4ade80;
-    grid-area: content1;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-}
-
-@media only screen and (max-width: 550px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr;
-        grid-template-areas: "nav" "sidebar" "main" "content1";
-        grid-gap: 0.2rem;
-    }
-}
+                                                                                                                                                                                          :root {
+                                                                                                                                                                                             --main-radius: 5px;
+                                                                                                                                                                                             --main-padding: 5px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .container {
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             grid-template-columns: 1fr 1fr 1fr 1fr;
+                                                                                                                                                                                             grid-template-rows: 150px 0.8fr 0.8fr 1.2fr;
+                                                                                                                                                                                             grid-template-areas: "sidebar nav nav nav" "sidebar main main content1" "sidebar main main content1" "sidebar main main content1 ";
+                                                                                                                                                                                             font-family: Roboto;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         nav {
+                                                                                                                                                                                             background: rgb(255, 255, 255);
+                                                                                                                                                                                             grid-area: nav;
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             grid-template-rows: 1fr 1fr;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         main {
+                                                                                                                                                                                             background: #e5e7eb;
+                                                                                                                                                                                             grid-area: main;
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             grid-template-rows: 80px 1fr;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         main h4 {
+                                                                                                                                                                                             padding-left: 20px;
+                                                                                                                                                                                             font-family: Roboto;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         main .cont-carte {
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             grid-template-columns: 1fr 1fr;
+                                                                                                                                                                                             grid-template-rows: 1fr 1fr 1fr;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         main .cont-carte p {
+                                                                                                                                                                                             color: #9ca3af;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         main .cont-carte h3 {
+                                                                                                                                                                                             font-size: 16px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         main .cont-carte .carte {
+                                                                                                                                                                                             background: white;
+                                                                                                                                                                                             border-radius: var(--main-radius);
+                                                                                                                                                                                             padding: 10px;
+                                                                                                                                                                                             margin: 10px;
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             grid-template-rows: 20px 1fr 20px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         main .cont-carte .carte .carte-icons {
+                                                                                                                                                                                             display: flex;
+                                                                                                                                                                                             flex-direction: row-reverse;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         #sidebar {
+                                                                                                                                                                                             background: #3b82f6;
+                                                                                                                                                                                             grid-area: sidebar;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         #sidebar li {
+                                                                                                                                                                                             list-style: none;
+                                                                                                                                                                                             color: white;
+                                                                                                                                                                                             margin: 15px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         #sidebar .side-content2 {
+                                                                                                                                                                                             padding-top: 30px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         #sidebar .side-content1 .titre {
+                                                                                                                                                                                             color: white;
+                                                                                                                                                                                             font-weight: bold;
+                                                                                                                                                                                             font-size: 50px;
+                                                                                                                                                                                             padding-bottom: 30px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         nav .Navarea {
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+                                                                                                                                                                                             margin: 10px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         nav .morganzone {
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         nav .morganzone h5 {
+                                                                                                                                                                                             font-size: 10px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         nav .Navarea .sz {
+                                                                                                                                                                                             background-color: gray;
+                                                                                                                                                                                             margin: 3px;
+                                                                                                                                                                                             border-radius: 10px;
+                                                                                                                                                                                             height: 17px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .morganadress {
+                                                                                                                                                                                             font-size: 15px;
+                                                                                                                                                                                             font-weight: bold;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         nav .morganzone .text {
+                                                                                                                                                                                             color: white;
+                                                                                                                                                                                             font-size: 14px;
+                                                                                                                                                                                             background-color: blue;
+                                                                                                                                                                                             border-radius: 60px;
+                                                                                                                                                                                             justify-items: center;
+                                                                                                                                                                                             height: 20px;
+                                                                                                                                                                                             margin: 2px;
+                                                                                                                                                                                             text-align: center;
+                                                                                                                                                                                             width: 65px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         nav .navarea {
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .imgsearch {
+                                                                                                                                                                                             width: 30px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .imgsearch2 {
+                                                                                                                                                                                             width: 30px;
+                                                                                                                                                                                             border-radius: 50%;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .imgsearch3 {
+                                                                                                                                                                                             width: 40px;
+                                                                                                                                                                                             border-radius: 50%;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         #content1 {
+                                                                                                                                                                                             background: #e5e7eb;
+                                                                                                                                                                                             grid-area: content1;
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             grid-template-rows: 1fr 1fr;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         @media only screen and (max-width: 550px) {
+                                                                                                                                                                                             .container {
+                                                                                                                                                                                                 grid-template-columns: 1fr;
+                                                                                                                                                                                                 grid-template-rows: 0.4fr 0.4fr 2.4fr 1fr;
+                                                                                                                                                                                                 grid-template-areas: "nav" "sidebar" "main" "content1";
+                                                                                                                                                                                                 grid-gap: 0.2rem;
+                                                                                                                                                                                             }
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .corps {
+                                                                                                                                                                                             padding: 25px;
+                                                                                                                                                                                             justify-content: space-around;
+                                                                                                                                                                                             color: gray;
+                                                                                                                                                                                             background-color: beige;
+                                                                                                                                                                                             border-radius: 5px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .deuxiemepartie {
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             flex-wrap: wrap;
+                                                                                                                                                                                             flex-direction: row;
+                                                                                                                                                                                             margin-top: 20px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .deuxiemepartie .agents {
+                                                                                                                                                                                             justify-content: space-around;
+                                                                                                                                                                                             background-color: beige;
+                                                                                                                                                                                             border-radius: 5px;
+                                                                                                                                                                                             margin: 5px;
+                                                                                                                                                                                             padding: 25px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .deuxiemepartie .agent {
+                                                                                                                                                                                             display: grid;
+                                                                                                                                                                                             grid-template-columns: 1fr 1fr;
+                                                                                                                                                                                             justify-content: space-around;
+                                                                                                                                                                                             background-color: beige;
+                                                                                                                                                                                             border-radius: 5px;
+                                                                                                                                                                                             margin: 5px;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         .agents img {
+                                                                                                                                                                                             width: 60px;
+                                                                                                                                                                                             height: 60px;
+                                                                                                                                                                                             border-radius: 50%;
+                                                                                                                                                                                         }
+                                                                                                                                                                                         
+                                                                                                                                                                                         #content1 .premierepartie h3 {
+                                                                                                                                                                                             font-size: bold;
+                                                                                                                                                                                             color: black;
+                                                                                                                                                                                         }
